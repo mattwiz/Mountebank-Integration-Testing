@@ -1,4 +1,4 @@
-name: $(Version).$(rev:r)
+#name: $(Version).$(rev:r)
 
 #variables:
 #- group: 'Pipeline Common'
@@ -44,8 +44,8 @@ stages:
         script: 'npm install -g azure-functions-core-tools --unsafe-perm true'
     - task: DotNetCoreInstaller@0
       displayName: 'Install .NET Core SDK'
-      inputs:
-        version: $(SdkVersion)
+      #inputs:
+      #  version: $(SdkVersion)
     - task: DotNetCoreCLI@2
       displayName: 'Restore NuGet Packages'
       inputs:
