@@ -1,8 +1,8 @@
 name: $(Version).$(rev:r)
 
-variables:
-- group: 'Pipeline Common'
-- group: '.NET Core Common'
+#variables:
+#- group: 'Pipeline Common'
+#- group: '.NET Core Common'
 
 trigger:
   branches:
